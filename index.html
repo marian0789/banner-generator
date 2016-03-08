@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
-    
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script> 
-    
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Template</title>
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
     //javascript 
-    $ (function (){
-      
-      //code goes here
-      
+    $(function() {
+
+      $('button').click(function() {
+
+        var userColor = $('#textColor').val();
+        $('#fontColor').css('color', userColor);
+
+        var season = $('#season').val();
+        var icecream = $('#icecream').val();
+        var name = $('#name').val();
+        $("p").html(
+          name + " thinks the perfect season to eat icecream is in the " + season + ". " + name + " likes " + icecream + " icecream."
+        );
+      });
     });
-    
-    </script>
-  </head>
-  <body>
-  
-  </body>
+  </script>
+</head>
+
+<body>
+<br>
+<br>
+<center>
+ Name:
+  <input type='text' id="name" placeholder="capitalize first letter">
+  <br>
+  <br>
+  Color:
+  <input type='color' id='textColor' value="#FFFFFF">
+
+  <h3>
+    What is the perfect season to eat icecream?</h3>
+
+  <input type='text' id="season">
+  <br>
+
+  <h3>What is your favorite icecream?</h3>
+  <input type='text' id="icecream">
+
+  <br>
+  <br>
+
+  <button>Click me</button>
+  <p id="fontColor"> </p>
+  </center>
+<body style="background-color: pink;">
+
+</body>
+
+
+
 </html>
