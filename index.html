@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -10,52 +11,49 @@
     //javascript 
     $(function() {
 
-      $('button').click(function() {
+      $('button').click(function() { //when user clicks the "click me" button
 
-        var userColor = $('#textColor').val();
-        $('#fontColor').css('color', userColor);
-
-        var season = $('#season').val();
-        var icecream = $('#icecream').val();
-        var name = $('#name').val();
+        var userColor = $('#textColor').val(); //user chooses color
+        $('#fontColor').css('color', userColor); //change the previous color to the user's color choice
+        var season = $('#season').val(); //selects the user's input of the season's input
+        var icecream = $('#icecream').val(); // selects the user's input for the icecream's input
+        var name = $('#name').val(); //selects the user's name of the name's input 
         $("p").html(
           name + " thinks the perfect season to eat icecream is in the " + season + ". " + name + " likes " + icecream + " icecream."
-        );
+        ); // sentence that selects the inputs of the user's for each of the answered inputs
       });
     });
   </script>
 </head>
 
 <body>
-<br>
-<br>
-<center>
- Name:
-  <input type='text' id="name" placeholder="capitalize first letter">
   <br>
   <br>
-  Color:
-  <input type='color' id='textColor' value="#FFFFFF">
+  <center>
+    Name:
+    <input type='text' id="name" placeholder="capitalize first letter">
+    <br>
+    <br> Color:
+    <input type='color' id='textColor' value="#FFFFFF">
 
-  <h3>
+    <h3>
     What is the perfect season to eat icecream?</h3>
 
-  <input type='text' id="season">
-  <br>
+    <input type='text' id="season">
 
-  <h3>What is your favorite icecream?</h3>
-  <input type='text' id="icecream">
+    <br>
 
-  <br>
-  <br>
+    <h3>What is your favorite icecream?</h3>
+    <input type='text' id="icecream">
 
-  <button>Click me</button>
-  <p id="fontColor"> </p>
+    <br>
+    <br>
+
+    <button>Click me</button>
+    <p id="fontColor"> </p>
   </center>
-<body style="background-color: pink;">
 
-</body>
-
-
+  <body style="background-color: pink;">
+ </body>
 
 </html>
