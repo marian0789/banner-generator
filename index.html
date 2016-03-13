@@ -18,7 +18,7 @@
         var season = $('#season').val(); //selects the user's input of the season's input
         var icecream = $('#icecream').val(); // selects the user's input for the icecream's input
         var name = $('#name').val(); //selects the user's name of the name's input 
-        $("p").html(
+        $("h2").html(
           name + " thinks the perfect season to eat icecream is in the " + season + ". " + name + " likes " + icecream + " icecream."
         ); // sentence that selects the inputs of the user's for each of the answered inputs
       });
@@ -30,30 +30,31 @@
   <br>
   <br>
   <center>
+    <h1>We Scream For Ice Cream</h1>
     Name:
-    <input type='text' id="name" placeholder="capitalize first letter">  
+    <input type='text' id="name" placeholder="Capitalize first letter">
     <br>
     <br> Color:
-    <input type='color' id='textColor' value="#FFFFFF"> 
+    <input type='color' id='textColor' value="#FFFFFF">
 
     <h3>
-    What is the perfect season to eat icecream?</h3> 
+    What is the perfect season to eat ice cream?</h3>
 
-    <input type='text' id="season">
+    <input type='text' id="season" placeholder="Fall/Winter/Spring/Summer">
 
     <br>
 
-    <h3>What is your favorite icecream?</h3>
-    <input type='text' id="icecream">
+    <h3>What is your favorite ice cream?</h3>
+    <input type='text' id="icecream" placeholder="vanilla? chocolate?">
 
     <br>
     <br>
 
     <button>Click me</button>
-    <p id="fontColor"> </p>
+    <h2 id="fontColor"> </h2>
   </center>
 
   <body style="background-color: pink;">
- </body>
+  </body>
 
 </html>
